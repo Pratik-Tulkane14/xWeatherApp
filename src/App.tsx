@@ -99,29 +99,29 @@ function App() {
         </p>
       }
       {weatherData &&
-        <div className="card-wrapper">
-          <div className="weather-cards">
+        <div className="weather-cards">
+          <div className="weather-card">
             <p>Temperature
             </p>
             <span>
               {weatherData?.current?.temp_c}°C
             </span>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <p>Humidity
             </p>
             <span>
               {weatherData?.current?.humidity}%
             </span>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <p>Condition
             </p>
             <span>
               {weatherData?.current?.condition.text}
             </span>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <p>Wind Speed
             </p>
             <span>
