@@ -16,8 +16,10 @@
   padding: 5px 10px;
   margin-right: 10px;
   background-color: #fff;
+  font-size: 18px;
 }
 .submit-btn {
+  font-size: 18px;
   background-color: var(--button-color);
   color: #ffff;
   padding: 5px 10px;
