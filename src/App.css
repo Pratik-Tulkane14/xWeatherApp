@@ -1,0 +1,49 @@
+:root {
+  --background-color: #C2FFC7;
+  --card-color: #FFFBE6;
+  --button-color: rgb(78, 176, 78);
+}
+*{
+  background-color: var(--background-color);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search{
+  outline-color: transparent;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+.submit-btn {
+  background-color: var(--button-color);
+  color: #ffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline-color: transparent;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.weather-cards{
+  background-color: var(--card-color);
+  height: 100px;
+  width: 200px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  >p{
+    background-color: var(--card-color);
+    font-weight: bold;
+  }
+  >span{
+    background-color: var(--card-color);
+
+  }
+}
