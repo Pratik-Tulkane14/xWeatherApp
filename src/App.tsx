@@ -93,36 +93,40 @@ function App() {
         <input type='text' placeholder='Enter city name' className="search" value={search} onChange={(e) => setSearch(e.target.value)}></input>
         <button type='submit' className="submit-btn" onClick={((e) => getWeather(e))}>Search</button>
       </form>
-      {isLoading && "Loading data..."}
+      {isLoading &&
+        <p>
+          "Loading data..."
+        </p>
+      }
       {weatherData &&
         <div className="card-wrapper">
           <div className="weather-cards">
             <p>Temperature
             </p>
-              <span>
+            <span>
               {weatherData?.current?.temp_c}°C
-              </span>
+            </span>
           </div>
           <div className="weather-cards">
             <p>Humidity
             </p>
-              <span>
-                {weatherData?.current?.humidity}%
-              </span>
+            <span>
+              {weatherData?.current?.humidity}%
+            </span>
           </div>
           <div className="weather-cards">
             <p>Condition
             </p>
-              <span>
-                {weatherData?.current?.condition.text}
-              </span>
+            <span>
+              {weatherData?.current?.condition.text}
+            </span>
           </div>
           <div className="weather-cards">
             <p>Wind Speed
             </p>
-              <span>
-                {weatherData?.current?.wind_kph}kph
-              </span>
+            <span>
+              {weatherData?.current?.wind_kph}kph
+            </span>
           </div>
         </div>
       }
